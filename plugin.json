@@ -1,0 +1,12 @@
+{
+  "name": "slide-designer",
+  "displayName": "Slide Designer",
+  "version": "1.0.0",
+  "description": "Design editorial 16:9 presentation slides, interior quotations, lookbooks, and pitch decks with HTML/CSS and direct vector PDF export.",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Design a 16:9 interior design quotation slide deck and export to PDF",
+    "Create an editorial pitch deck with custom AI image generation prompts",
+    "Generate an elegant 16:9 architectural presentation with financial tables"
+  ]
+}

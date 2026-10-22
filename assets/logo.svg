@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a2622"/>
+      <stop offset="100%" stop-color="#191715"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#b08a5a"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded canvas -->
+  <rect width="256" height="256" rx="48" fill="url(#bg)"/>
+
+  <!-- Back slide (offset) -->
+  <rect x="52" y="58" width="156" height="96" rx="8" fill="#38332d" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" transform="rotate(-6 130 106)" filter="url(#shadow)"/>
+
+  <!-- Main front 16:9 slide -->
+  <rect x="42" y="76" width="172" height="104" rx="8" fill="#efeae3" stroke="#b08a5a" stroke-width="1.5" filter="url(#shadow)"/>
+
+  <!-- Slide content representation -->
+  <!-- Left column: Hero Image area -->
+  <rect x="52" y="86" width="68" height="84" rx="5" fill="#e0d5c3"/>
+  <circle cx="86" cy="116" r="16" fill="#b08a5a" opacity="0.4"/>
+  <path d="M 58 160 L 76 136 L 90 150 L 102 138 L 114 160 Z" fill="#64452a" opacity="0.35"/>
+
+  <!-- Right column: Typographic structure -->
+  <!-- Eyebrow -->
+  <rect x="130" y="92" width="36" height="3" rx="1.5" fill="#b08a5a"/>
+  <!-- Headline -->
+  <rect x="130" y="101" width="70" height="7" rx="2" fill="#2a2622"/>
+  <!-- Subtitle -->
+  <rect x="130" y="113" width="54" height="4" rx="1.5" fill="#6b625a"/>
+  <!-- Hairline rule -->
+  <line x1="130" y1="124" x2="198" y2="124" stroke="#d8cfc4" stroke-width="1"/>
+  <!-- Body copy lines -->
+  <rect x="130" y="132" width="64" height="3" rx="1.5" fill="#a49a90"/>
+  <rect x="130" y="139" width="58" height="3" rx="1.5" fill="#a49a90"/>
+  <rect x="130" y="146" width="48" height="3" rx="1.5" fill="#a49a90"/>
+  <!-- Accent badge / price -->
+  <rect x="130" y="157" width="40" height="7" rx="3.5" fill="#64452a"/>
+
+  <!-- Slide aspect ratio indicator badge -->
+  <g transform="translate(164, 196)">
+    <rect x="0" y="0" width="50" height="20" rx="10" fill="url(#gold)"/>
+    <text x="25" y="13.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">16 : 9</text>
+  </g>
+</svg>
